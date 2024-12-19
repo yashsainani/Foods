@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    transition: all 0.5s;
+}

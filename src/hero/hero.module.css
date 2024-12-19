@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info h1 {
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.first-heading {
+    color: aliceblue;
+}
+
+.second-heading {
+    color: deeppink;
+    position: relative;
+    top: -2rem;
+    z-index: 1;
+}
+
+.info p {
+    text-align: justify;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-section {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.btn1, .btn2 {
+    width: 50%;
+    border: none;
+}
+
+.btn1 {
+    background-color: deeppink;
+    color: #fff;
+}
+
+.btn1:hover {
+    background-color: rgb(208, 0, 111);
+}
+
+.btn2 {
+    background-color: #fff;
+    color: deeppink;
+}
+
+.btn2:hover {
+    color: rgb(208, 0, 111);
+}
+
+@media screen and (max-width:1024px) {
+    .hero-section {
+        height: fit-content;
+        min-height: 50rem;
+        padding-top: 10rem;
+    }
+
+    .info {
+        width: 70%;
+    }
+
+
+@media screen and (max-width:640px) {
+    .hero-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: -1;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .first-heading {
+        color: #242424;
+    }
+
+    .info p {
+        color: rgba(0, 0, 0, 0.8)
+    }
+
+    .btn-section {
+        flex-direction: column;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+    }
+}}
+
+@media screen and (max-width:344px) {
+    .hero-section {
+        padding-top: 15rem;
+    }
+
+    .btn1, .btn2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .hero-section {
+        padding-top: 20rem;
+    }
+}

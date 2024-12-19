@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.footer {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer-section h1 {
+    font-size: 2rem;
+    color: seagreen;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-section p {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.nav, .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav li,
+.social li {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: color 5ms;
+}
+
+.social li {
+    transition: color 0.5s;
+}
+
+.nav li {
+    font-size: 1.6rem;
+}
+
+.social li {
+    font-size: 2.4rem;
+}
+
+.nav li:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.facebook:hover {
+    color: rgb(24, 119, 242);
+}
+
+.insta:hover {
+    background: linear-gradient(to right, rgb(131, 58, 180), rgb(253, 29, 29), rgb(252, 176, 69), rgb(255, 69, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.twitter:hover {
+    color: rgb(29, 161, 242);
+}
+
+.github:hover {
+    background: linear-gradient(90deg, rgb(0, 199, 13) 40%, rgba(255, 255, 255, 0.5) 50%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.dribble:hover {
+    color: rgb(236, 72, 153);
+}

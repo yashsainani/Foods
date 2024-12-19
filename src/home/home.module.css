@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.commentsCard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 6rem 6rem 0 6rem;
+}
+
+.commentCard {
+    width: 30%;
+}
+
+@media screen and (max-width:1024px) {
+    .commentsCard-container {
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+    .commentCard {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .commentsCard-container {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    .commentCard {
+        width: 100%;
+    }
+}
