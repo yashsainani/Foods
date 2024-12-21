@@ -5,7 +5,7 @@ import styles from './App.module.css'
 function App() {
   return (
     <>
-      <Nav />
+      <Nav bgColor={'#111827'} />
       <Home />
     </>
   )

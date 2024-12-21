@@ -15,7 +15,6 @@ html {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    background-color: #111827;
     position: fixed;
     z-index: 3;
 }

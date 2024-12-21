@@ -1,9 +1,9 @@
 import Btn from "../button/button";
 import styles from "./nav.module.css";
 
-const Nav = () => {
+const Nav = ({bgColor}) => {
     return (
-        <nav className={styles.nav}>
+        <nav style={{backgroundColor: bgColor}} className={styles.nav}>
             <section className={styles['logo-section']}>
                 <img src="https://flowbite.com/docs/images/logo.svg" alt="logo" />
                 <h1 className={styles.logo}>GeekFoods</h1>
